@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                python --version
+                sh 'python --version'
+            }
+        }
+        stage('push') {
+            steps {
+                echo 'hello world'
             }
         }
     }
